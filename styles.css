@@ -1,0 +1,71 @@
+:root {
+
+/* Spacing */
+
+--space-100: 8px;
+--space-200: 16px;
+--space-300: 24px;
+--space-400: 32px;
+--space-500: 40px;
+
+/* Colors */
+
+--white: #FFFFFF;
+--black: #000000;
+--purple-100: #F8EEFF;
+--purple-600: #8B6990;
+--purple-950: #301534;
+--violet-600: #AD28EB;
+
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "WorkSans", sans-serif;
+    background: #F8EEFF url("assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 90%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 16px;
+    margin: 5rem 0;
+}
+
+header {
+    display: flex;
+    gap: 1rem;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+main > *:not(:first-child) {
+    border-top: 1px solid HSLA(240, 3%, 94%, 1);
+}
+
+
+/* Typography */
+
+h2 {
+    font-size: 1rem;
+}
