@@ -59,8 +59,21 @@ header {
     justify-content: space-between;
 }
 
+.open-tab {
+    cursor: pointer;
+}
+
+.close-tab {
+    display: none;
+    cursor: pointer;
+}
+
 main > *:not(:first-child) {
     border-top: 1px solid HSLA(240, 3%, 94%, 1);
+}
+
+.panel {
+    display: none;
 }
 
 
