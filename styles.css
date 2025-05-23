@@ -41,7 +41,7 @@ body {
 
 #container {
     width: 90%;
-    max-width: 500px;
+    max-width: 550px;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ body {
 
 header {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .tab {
@@ -80,6 +80,14 @@ main > *:not(:first-child) {
     transition: max-height 0.2s ease-out;
 }
 
+.tab:hover {
+    cursor: pointer;
+}
+
+.active {
+    color: var(--violet-600);
+}
+
 
 /* Typography */
 
@@ -87,7 +95,23 @@ h2 {
     font-size: 1rem;
 }
 
+h2:hover {
+    color: var(--violet-600);
+}
+
 .panel p {
     line-height: 130%;
     padding: 0 1rem;
+}
+
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url("assets/images/background-pattern-desktop.svg");
+        background-size: contain;
+    }
+}
+
+h1 {
+    font-size: 2.75rem;
 }
