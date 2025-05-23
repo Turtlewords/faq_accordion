@@ -32,22 +32,23 @@
 body {
     font-family: "WorkSans", sans-serif;
     background: #F8EEFF url("assets/images/background-pattern-mobile.svg");
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 #container {
     width: 90%;
-    max-width: 550px;
+    max-width: 580px;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
     border-radius: 16px;
-    margin: 5rem 0;
 }
 
 header {
@@ -105,13 +106,23 @@ h2:hover {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     body {
-        background-image: url("assets/images/background-pattern-desktop.svg");
+        background: #F8EEFF url("assets/images/background-pattern-desktop.svg");
         background-size: contain;
+        background-repeat: no-repeat;
+        
     }
 }
 
 h1 {
-    font-size: 2.75rem;
+    font-size: 3rem;
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+h1 {
+    font-size: 3.25rem;
 }
