@@ -23,3 +23,12 @@ for (let i = 0; i < tabs.length; i++) {
     })
 }
 
+tabs.forEach((tab) => {
+    tab.addEventListener("keypress", (e) => {
+        if (e.key == "Enter" || e.key == " ") {
+            e.preventDefault();
+            tab.click();
+        }
+    })
+})
+
